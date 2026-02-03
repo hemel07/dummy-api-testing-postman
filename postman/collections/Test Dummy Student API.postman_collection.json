@@ -1,0 +1,49 @@
+{
+  "info": {
+    "_postman_id": "9149f155-bdc6-4b72-869f-462b6deb9a4f",
+    "name": "Test Dummy Student API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41828607",
+    "_collection_link": "https://go.postman.co/collection/41828607-9149f155-bdc6-4b72-869f-462b6deb9a4f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "//TESTING STASTUS CODE\r",
+              "//======================================================\r",
+              "pm.test(\"Status Code is 200\",()=> {\r",
+              "\tpm.response.to.have.status(200);\r",
+              "\t}\r",
+              "    );"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "students",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
