@@ -230,6 +230,17 @@
         "Computer Science 102",
         "Digital Media"
       ]
+    },
+    {
+      "id": 19,
+      "name": "Jk New",
+      "location": "Paris, France",
+      "phone": "+1-234",
+      "courses": [
+        "Banla 101",
+        "Sanskit 101",
+        "Science 101"
+      ]
     }
   ]
 }

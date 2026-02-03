@@ -44,6 +44,50 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "POST Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Successful POST request\",()=> \r",
+              "\t{\r",
+              "\tpm.expect(pm.response.code).to.be.oneOf([201,202]);\r",
+              "\t});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":19,\r\n    \"name\": \"Jk New\",\r\n    \"location\": \"Paris, France\",\r\n    \"phone\": \"+1-234\",\r\n    \"courses\": [\r\n        \"Banla 101\",\r\n        \"Sanskit 101\",\r\n        \"Science 101\"\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "students"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
