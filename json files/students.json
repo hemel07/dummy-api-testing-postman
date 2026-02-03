@@ -1,0 +1,235 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "location": "New York, USA",
+      "phone": "+1-234-567-8901",
+      "courses": [
+        "Math 101",
+        "Physics 101",
+        "Computer Science 101"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "location": "London, UK",
+      "phone": "+44-123-456-7890",
+      "courses": [
+        "English Literature",
+        "History 101",
+        "Art 101"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "location": "Sydney, Australia",
+      "phone": "+61-2-9876-5432",
+      "courses": [
+        "Biology 101",
+        "Chemistry 101",
+        "Mathematics 201"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Bob Williams",
+      "location": "Toronto, Canada",
+      "phone": "+1-416-555-1234",
+      "courses": [
+        "Philosophy 101",
+        "Economics 201",
+        "Psychology 101"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Charlie Brown",
+      "location": "Berlin, Germany",
+      "phone": "+49-30-123-4567",
+      "courses": [
+        "German Literature",
+        "History 102",
+        "Political Science 101"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "David Clark",
+      "location": "Paris, France",
+      "phone": "+33-1-234-5678",
+      "courses": [
+        "French Language",
+        "Art History",
+        "Sociology 101"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Emma Green",
+      "location": "Toronto, Canada",
+      "phone": "+1-416-987-6543",
+      "courses": [
+        "Business Management",
+        "Accounting 101",
+        "Marketing 101"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Lucas Taylor",
+      "location": "Rome, Italy",
+      "phone": "+39-06-987-6543",
+      "courses": [
+        "Italian Literature",
+        "Philosophy 102",
+        "Cultural Studies"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Mia White",
+      "location": "Madrid, Spain",
+      "phone": "+34-91-234-5678",
+      "courses": [
+        "Spanish Language",
+        "History 201",
+        "Sociology 102"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "James Martin",
+      "location": "Tokyo, Japan",
+      "phone": "+81-3-4567-8901",
+      "courses": [
+        "Japanese Language",
+        "Engineering 101",
+        "Physics 202"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Sophia Lee",
+      "location": "Seoul, South Korea",
+      "phone": "+82-2-987-6543",
+      "courses": [
+        "Korean Language",
+        "Computer Science 102",
+        "Digital Media"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Ethan King",
+      "location": "Los Angeles, USA",
+      "phone": "+1-213-555-6789",
+      "courses": [
+        "Photography 101",
+        "Media Studies",
+        "Art Design"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Olivia Harris",
+      "location": "Mexico City, Mexico",
+      "phone": "+52-55-123-4567",
+      "courses": [
+        "Spanish Literature",
+        "Social Work",
+        "Cultural Anthropology"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "William Green",
+      "location": "Cape Town, South Africa",
+      "phone": "+27-21-456-7890",
+      "courses": [
+        "African History",
+        "Business Ethics",
+        "Environmental Science"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Ava Evans",
+      "location": "Toronto, Canada",
+      "phone": "+1-416-123-4567",
+      "courses": [
+        "Media Production",
+        "Journalism 101",
+        "Public Relations"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Samuel Adams",
+      "location": "Dublin, Ireland",
+      "phone": "+353-1-234-5678",
+      "courses": [
+        "Irish History",
+        "Philosophy 201",
+        "Poetry 101"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Lily Thompson",
+      "location": "Vancouver, Canada",
+      "phone": "+1-604-555-1234",
+      "courses": [
+        "Statistics 101",
+        "Applied Mathematics",
+        "Computer Graphics"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Henry Clark",
+      "location": "London, UK",
+      "phone": "+44-20-123-4567",
+      "courses": [
+        "Data Science",
+        "Artificial Intelligence 101",
+        "Digital Marketing"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Zoe Robinson",
+      "location": "Buenos Aires, Argentina",
+      "phone": "+54-11-2345-6789",
+      "courses": [
+        "Spanish Language",
+        "Psychology 102",
+        "Philosophy 101"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Isaac Walker",
+      "location": "Sydney, Australia",
+      "phone": "+61-2-123-4567",
+      "courses": [
+        "Marine Biology",
+        "Oceanography",
+        "Environmental Science"
+      ]
+    },
+    {
+      "id": "3d19",
+      "name": "Sophia",
+      "location": "Seoul, South Korea",
+      "phone": "+82-2-987-6543",
+      "courses": [
+        "Korean Language",
+        "Computer Science 102",
+        "Digital Media"
+      ]
+    }
+  ]
+}
