@@ -1,0 +1,98 @@
+{
+  "info": {
+    "_postman_id": "1d1c21ba-67fe-4144-ac1b-34945c24c438",
+    "name": "ReqRes_httpRequest Variaables",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41828607",
+    "_collection_link": "https://go.postman.co/collection/41828607-1d1c21ba-67fe-4144-ac1b-34945c24c438?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Req Res",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "//Local Varivales",
+              "pm.variables.set(\"url_local\",\"https://reqres.in\");",
+              "",
+              "//Global Variables creation",
+              "pm.globals.set(\"userid_global\", \"2\");",
+              "",
+              "//Environment Variables creation ",
+              "pm.environment.set(\"userid_qa_env\",\"2\");",
+              "",
+              "//Collection Variables creation",
+              "pm.collectionVariables.set(\"userid_collect\", \"2\");"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_bfb04df8f46f43a584897f7261a710df",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{url_local}}/api/users?page={{userid_qa_env}}",
+          "host": [
+            "{{url_local}}"
+          ],
+          "path": [
+            "api",
+            "users"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "{{userid_qa_env}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "url_collect",
+      "value": ""
+    },
+    {
+      "key": "userid_collect",
+      "value": ""
+    }
+  ]
+}
