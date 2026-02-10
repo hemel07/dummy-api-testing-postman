@@ -1,0 +1,506 @@
+{
+  "info": {
+    "_postman_id": "35a3ea38-5d99-4b70-aefd-5f15080bffef",
+    "name": "BooksAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41828607",
+    "_collection_link": "https://go.postman.co/collection/41828607-35a3ea38-5d99-4b70-aefd-5f15080bffef?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Creartetoken",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"clientName\": \"Postman\",\n    \"clientEmail\": \"rttester@yopmail.com\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://simple-books-api.click/api-clients/",
+          "protocol": "https",
+          "host": [
+            "simple-books-api",
+            "click"
+          ],
+          "path": [
+            "api-clients",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Creartetoken",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"clientName\": \"Postman\",\n    \"clientEmail\": \"rttester@yopmail.com\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://simple-books-api.click/api-clients/",
+              "protocol": "https",
+              "host": [
+                "simple-books-api",
+                "click"
+              ],
+              "path": [
+                "api-clients",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "82"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 06:45:30 GMT"
+            },
+            {
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-698ad40a-7b74fa9c04df07c17d854e38;Parent=59fa8f99c6c6edc7;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-RequestId",
+              "value": "4bcc03b7-44bf-45c1-9a6c-65a03f07debd"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "YjYRsFkIIAMENeQ="
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 955eebde8c6e33d8b400ea7331ea18c2.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "CCU50-P5"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "71-0u82UHfWt8KHKHxADtD9VY2bJTSdXrd0jyov9-QM9qE4wLNsksg=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"accessToken\": \"f464f33fdbfa706affb1134f31fa4e9be0d3594249c5f51e663b53a201a3149c\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "GET Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{books}}/status",
+          "host": [
+            "{{books}}"
+          ],
+          "path": [
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET all books",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "pm.collectionVariables.set(\"books\",\"https://simple-books-api.click\");"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{books}}/books",
+          "host": [
+            "{{books}}"
+          ],
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET 1 book",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{books}}/2",
+          "host": [
+            "{{books}}"
+          ],
+          "path": [
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Submit Order",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Submit Order",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookId\": 3,\n  \"customerName\": \"Doe\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{books}}/orders",
+              "host": [
+                "{{books}}"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "50"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 06:55:48 GMT"
+            },
+            {
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-698ad674-7244d211761e09a55332bbfc;Parent=09da9d5c59a13a98;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-RequestId",
+              "value": "765c651b-5ac0-4f09-b769-8c71aca75f17"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "YjZySETSIAMENsA="
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 8c94305293b8d7f93f97ee3086e82daa.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "CCU50-P5"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "tlfsijCy-RoA__t8rqgjlGsF_9s-kZ8IIXvB2JeUOubM9G1YtPo8Pw=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"created\": true,\n    \"orderId\": \"H6rdh3FdlaSRcYuCM5RLl\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Submit Order Copy",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Submit Order",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookId\": 3,\n  \"customerName\": \"Doe\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{books}}/orders",
+              "host": [
+                "{{books}}"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "50"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 10 Feb 2026 06:55:48 GMT"
+            },
+            {
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-698ad674-7244d211761e09a55332bbfc;Parent=09da9d5c59a13a98;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-RequestId",
+              "value": "765c651b-5ac0-4f09-b769-8c71aca75f17"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "YjZySETSIAMENsA="
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 8c94305293b8d7f93f97ee3086e82daa.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "CCU50-P5"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "tlfsijCy-RoA__t8rqgjlGsF_9s-kZ8IIXvB2JeUOubM9G1YtPo8Pw=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"created\": true,\n    \"orderId\": \"H6rdh3FdlaSRcYuCM5RLl\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "GET all orders",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "GET a order",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{books}}/orders/H6rdh3FdlaSRcYuCM5RLl",
+          "host": [
+            "{{books}}"
+          ],
+          "path": [
+            "orders",
+            "H6rdh3FdlaSRcYuCM5RLl"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a Order",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{books}}/orders/8_1X_T0LkBw7Erpz",
+          "host": [
+            "{{books}}"
+          ],
+          "path": [
+            "orders",
+            "8_1X_T0LkBw7Erpz"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "f464f33fdbfa706affb1134f31fa4e9be0d3594249c5f51e663b53a201a3149c",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "books",
+      "value": ""
+    }
+  ]
+}
